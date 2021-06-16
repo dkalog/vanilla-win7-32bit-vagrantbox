@@ -2,10 +2,8 @@ About
 -----
 
 This is a Windows 7 (32bit) Box that is derived from a box provided by
-microsoft on [Modern.IE](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows) with a 10 day evaluation licence.
-This box is based on the ["IE11 on Win7" Vagrant Box with build number 20150916](https://az792536.vo.msecnd.net/vms/VMBuild_20150916/Vagrant/IE11/IE11.Win7.Vagrant.zip).
-
-It is adapted to match vagrant's requirements:
+microsoft on [Modern.IE](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows) with a 10 day evaluation licence or use this
+["IE11 on Win7" Vagrant Box with build number 20150916](https://az792536.vo.msecnd.net/vms/VMBuild_20150916/Vagrant/IE11/IE11.Win7.Vagrant.zip) adapted to match vagrant's requirements:
 
  * User is 'vagrant' (password 'vagrant')
  * WinRM is activated (for ``vagrant powershell``)
@@ -14,6 +12,14 @@ It is adapted to match vagrant's requirements:
  * chocolately is installed for easy unattended software installations
  * Windows Defender is disabled to avoid unnecessary load
 
+
+Easy install  on an vagrant
+--------------------------------
+* Download from [here](https://az792536.vo.msecnd.net/vms/VMBuild_20150916/Vagrant/IE11/IE11.Win7.Vagrant.zip)
+* Unpack "IE11 - Win7.box" in ZIP-file to project directory
+* run ``vagrant box add "IE11 - Win7.box" --name IE11Win7`` or
+* rename box to "IE11-Win7.box" and run ``vagrant box add  file:///C:/path/to/file.box/IE11-Win7.box  --name IE11Win7 ``
+* run ``vagrant up`` (wait for timeout message!)
 
 
 To create this box run the following steps
